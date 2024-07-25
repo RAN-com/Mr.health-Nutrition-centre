@@ -1,0 +1,88 @@
+.content{
+    display: none;
+}
+.show-content{
+    display: block;
+}
+.containe{
+        
+
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    padding: 50px;
+
+    background:#157667;
+}
+.hand{
+
+    justify-content: center;
+    align-items:center;
+}
+
+
+ .hexagonarea{
+    display: flex;
+}
+
+
+ .hexagonarea .hexagon1{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    bottom:-120px;
+    left:250px ;
+    clip-path: polygon(0 25%,50% 0,100% 25%, 100% 75%, 50% 100%,0 75%);
+    
+
+    background:#05cdaf;
+    display: flex;
+    
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    cursor:pointer;
+    transition: .5s;
+}
+.hexagonarea .hexagon2{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    top:60px;
+    left:150px ;
+    clip-path: polygon(0 25%,50% 0,100% 25%, 100% 75%, 50% 100%,0 75%);
+    
+    background:#05cdaf;
+    display: flex;
+    
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    cursor:pointer;
+    transition: .5s;
+}
+ .hexagonarea .hexagon3{
+    position: relative;
+    width: 200px;
+    height: 250px;
+    
+    left:50px;
+    clip-path: polygon(0 25%,50% 0,100% 25%, 100% 75%, 50% 100%,0 75%);
+    
+    background:#05cdaf;
+    display: flex;
+    
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    cursor:pointer;
+    transition: .5s;
+    
+}
+.about-left{
+    background-color:#05cdaf;
+}
+
+
+
+
