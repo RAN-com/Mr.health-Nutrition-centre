@@ -5,22 +5,22 @@ import 'swiper/css/autoplay';
 import { Autoplay } from 'swiper/modules';
 
 const testimonials = [
-  { name: "John Doe", text: "Amazing service!", image: "../../../public/file.png" },
-  { name: "Jane Smith", text: "Incredible experience.", image: "../../../public/mr1.png" },
-  { name: "Sam Wilson", text: "Top-notch support!", image: "../../../public/mr1.png" },
-  { name: "Alice Johnson", text: "Loved the quality.", image: "../../../public/mr1.png" },
-  { name: "Robert Brown", text: "Exceptional results.", image: "../../../public/mr1.png"},
-  { name: "Emily Davis", text: "Would recommend.", image: "../../../public/mr1.png" },
+  { name: "John Doe", text: "Amazing service!", image: "/file.png" },
+  { name: "Jane Smith", text: "Incredible experience.", image: "/mr1.png" },
+  { name: "Sam Wilson", text: "Top-notch support!", image: "/mr1.png" },
+  { name: "Alice Johnson", text: "Loved the quality.", image: "/mr1.png" },
+  { name: "Robert Brown", text: "Exceptional results.", image: "/mr1.png" },
+  { name: "Emily Davis", text: "Would recommend.", image: "/mr1.png" },
 ];
 
 const Testimonial = () => {
   return (
     <div className="bg-gray-100 py-12">
       <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
-      <div className="max-w-8xl mx-auto">
+      <div className="max-w-7xl mx-auto px-4">
         <Swiper
           modules={[Autoplay]}
-          spaceBetween={100}
+          spaceBetween={20}
           slidesPerView={1}
           autoplay={{ delay: 3000, disableOnInteraction: false }}
           loop={true}
@@ -31,29 +31,16 @@ const Testimonial = () => {
           }}
         >
           {testimonials.map((testimonial, index) => (
-            <SwiperSlide key={index}>
-          
-          
-              <span className="   inset-0  w-500 h-700 object-cover w-[450px] h-[200px] items-end -skew-x-12 bg-transparent border-2 border-customTomato p-4 shadow-md flex flex-col  text-center"/>
-        {testimonial.color}
-            <img
-                  src={testimonial.image}
-                  alt={testimonial.name}
-                  className="w-32 h-32   -left-14 top-5  rounded-full mb-4 absolute inset-0  object-cover"
-                />
-                <div className='flex justify-between'>
-                
-                 <p className="text-lg font-semibold mb-2 left-32 top-14  absolute inset-0   object-cover ">{testimonial.name}<br/><p className="text-gray-600">{testimonial.text}</p></p>
-                 
-          
+            <SwiperSlide key={index} className="relative -skew-x-12 p-6 border border-green-600 shadow-lg rounded-lg">
+              <div className="flex flex-col items-center text-center">
                 <img
                   src={testimonial.image}
                   alt={testimonial.name}
-                  className="w-14 h-14 left-96 top-5   rounded-full mb-4 absolute inset-0  object-cover"
+                  className="w-32 h-32 rounded-full mb-4 object-cover"
                 />
-               </div>
-                
-
+                <p className="text-lg font-semibold mb-2">{testimonial.name}</p>
+                <p className="text-gray-600">{testimonial.text}</p>
+              </div>
             </SwiperSlide>
           ))}
         </Swiper>

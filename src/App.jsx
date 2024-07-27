@@ -23,46 +23,43 @@ import GenderSelection from './Components/Tab/Tabs'
 
 
 import Tab from './Components/Tab/Tab'
-
+import HexagonButton from './Components/Tab/Ta'
 
 function App() {
   const scrollRef = useRef(null);
   const [count, setCount] = useState(0)
 
   return (
-    <div className="App">
-      <Navbar />
-      <Hero/>
+  <div >
+      <Navbar /> 
+       <Hero/> 
      <br/>
-      <header className="App-header p-10 justify-center items-center text-center">
+       <header className="App-header p-10 justify-center items-center text-center">
         <h1 className="text-4xl font-bold mb-4 ">Photo </h1>
         <PhotoHoverSlide />
-      </header>
+      </header> 
       <header className="App-header p-10 justify-center items-center text-center">
         <h1 className="text-4xl font-bold mb-4 ">About Us</h1>
         <FlexTwoColumnLayout/>
       </header>
      
-      
+       
       <Scroll/>
-    
-      <Tab/>
-      <header className="App-header">
+   
+      {/* <Tab/> */}
+       <header className="App-header">
         <h1 className="text-2xl font-bold mb-4">Flex Two Column Layout Example with Form and US Map</h1>
         <FlexTwoColumnLayou />
       </header>
-      <header className="App-header">
+     <header className="App-header">
         <h1 className="text-2xl font-bold mb-4">Photo Gallery Example</h1>
         <Test/>
       </header>
-      <main className="p-4">
-        <h1 className="text-2xl font-bold">Welcome to my website!</h1>
-        
-      </main>
-      <Footer/>
+   
+      <Footer/> 
       
     
-      
+
       
    
            

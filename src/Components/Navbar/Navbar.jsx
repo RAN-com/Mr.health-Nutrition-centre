@@ -26,8 +26,8 @@ const Navbar = () => {
     </div>
     {isOpen && (
       <div className="md:hidden">
-        <a href="#" className="block text-white py-2">Home</a>
-        <a href="#" className="block text-white py-2">About</a>
+        <a href="../Hero/Hero.jsx" className="block text-white py-2">Home</a>
+        <a href="../PhotoHoverText/PhotoHoverText.jsx" className="block text-white py-2">About</a>
         <a href="#" className="block text-white py-2">Services</a>
         <a href="#" className="block text-white py-2">Contact</a>
         <button className="bg-white text-blue-500 font-bold py-2 px-4 rounded hover:bg-gray-200 mt-2 w-full">

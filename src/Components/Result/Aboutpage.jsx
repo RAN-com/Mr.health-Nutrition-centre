@@ -1,7 +1,6 @@
 import React from 'react';
 import { useParams } from 'react-router-dom';
 
-
 const Aboutpage = () => {
   const { id } = useParams();
 
@@ -12,7 +11,6 @@ const Aboutpage = () => {
     name: 'John Doe',
     content: 'This is detailed content about John.',
   };
-  
 
   return (
     <div className="flex flex-col items-center p-6">
